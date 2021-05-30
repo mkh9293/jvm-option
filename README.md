@@ -4,7 +4,7 @@ description: jdk8u292 버전 기준으로 공통적으로 설정해놓으면 좋
 
 # 최소한 설정해놓으면 좋은 jvm option
 
-jvm option 후보들..
+### jvm option 후보들
 
 <table>
   <thead>
@@ -15,6 +15,11 @@ jvm option 후보들..
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <td style="text-align:left">-XX:+UseG1GC</td>
+      <td style="text-align:left">g1gc &#xB97C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</td>
+      <td style="text-align:left"></td>
+    </tr>
     <tr>
       <td style="text-align:left">-Xms</td>
       <td style="text-align:left">jvm &#xCD5C;&#xC18C; &#xD799;&#xC0AC;&#xC774;&#xC988;</td>
@@ -29,7 +34,7 @@ jvm option 후보들..
       <td style="text-align:left">-XX:NewRatio</td>
       <td style="text-align:left">new/old &#xC601;&#xC5ED; &#xBE44;&#xC728;&#xC744; &#xC815;&#xD55C;&#xB2E4;.</td>
       <td
-      style="text-align:left">&#xD14C;&#xC2A4;&#xD2B8;</td>
+      style="text-align:left">&#xB9AC;&#xC11C;&#xCE58;</td>
     </tr>
     <tr>
       <td style="text-align:left">-XX:SurvivorRatio</td>
@@ -38,7 +43,7 @@ jvm option 후보들..
           &#xC815;&#xD55C;&#xB2E4;.</p>
         <p>&#xB514;&#xD3F4;&#xD2B8; &#xAC12;&#xC740; 8.</p>
       </td>
-      <td style="text-align:left">&#xD14C;&#xC2A4;&#xD2B8;</td>
+      <td style="text-align:left">&#xB9AC;&#xC11C;&#xCE58;</td>
     </tr>
     <tr>
       <td style="text-align:left">-XX:MetaspaceSize</td>
@@ -51,7 +56,7 @@ jvm option 후보들..
         <p>native memory &#xC601;&#xC5ED;&#xC5D0; &#xB370;&#xC774;&#xD130;&#xAC00;
           &#xD560;&#xB2F9;&#xB428;.</p>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#xB9AC;&#xC11C;&#xCE58;</td>
     </tr>
     <tr>
       <td style="text-align:left">-XX:MaxMetaspaceSize</td>
@@ -62,7 +67,7 @@ jvm option 후보들..
           &#xB9CE;&#xC774; &#xCC28;&#xC9C0;&#xD558;&#xAC8C; &#xB420; &#xACBD;&#xC6B0;
           &#xC11C;&#xBC84; &#xBD80;&#xD558; &#xC704;&#xD5D8;&#xC774; &#xC788;&#xB2E4;.</p>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#xB9AC;&#xC11C;</td>
     </tr>
     <tr>
       <td style="text-align:left">-XX:+UseGCLogFileRotation</td>
@@ -201,7 +206,7 @@ jvm option 후보들..
           &#xD574;&#xB2F9; &#xC635;&#xC158;&#xC744; &#xC8FC;&#xB294;&#xAC8C; &#xC88B;&#xB2E4;&#xACE0;
           &#xD568;.</p>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#xB9AC;&#xC11C;</td>
     </tr>
     <tr>
       <td style="text-align:left">-XX:IntialRAMPercentage</td>
@@ -209,25 +214,23 @@ jvm option 후보들..
         &#xC0AC;&#xC774;&#xC988; &#xC124;&#xC815;.
         <br />&#xC704;&#xC640; &#xB3D9;&#xC77C;&#xD558;&#xAC8C; double type</td>
       <td
-      style="text-align:left"></td>
+      style="text-align:left">&#xB9AC;&#xC11C;</td>
     </tr>
     <tr>
-      <td style="text-align:left">-XX:+TraceClassUnloading</td>
-      <td style="text-align:left">&#xD074;&#xB798;&#xC2A4;&#xB4E4;&#xC774; jvm &#xC5D0; &#xC5B8;&#xB85C;&#xB4DC;
-        &#xB420;&#xB54C; &#xB85C;&#xADF8;&#xB97C; &#xCC0D;&#xC5B4;&#xC900;&#xB2E4;.
-        <br
-        />&#xBA54;&#xBAA8;&#xB9AC;&#xB9AD;&#xC774; &#xC758;&#xC2EC;&#xAC00;&#xB294;
-        &#xD074;&#xB798;&#xC2A4;&#xB4E4;&#xC744; &#xD655;&#xC778;&#xD558;&#xAC70;&#xB098;
-        &#xC624;&#xB798;&#xB41C; &#xD074;&#xB798;&#xC2A4;&#xB4E4;&#xC758; gc &#xC0C1;&#xD0DC;
-        &#xD655;&#xC778;&#xAC00;&#xB2A5;.</td>
-      <td style="text-align:left">&#xD14C;&#xC2A4;</td>
+      <td style="text-align:left"><del>-XX:+TraceClassUnloading</del>
+      </td>
+      <td style="text-align:left"><del>&#xD074;&#xB798;&#xC2A4;&#xB4E4;&#xC774; jvm &#xC5D0; &#xC5B8;&#xB85C;&#xB4DC; &#xB420;&#xB54C; &#xB85C;&#xADF8;&#xB97C; &#xCC0D;&#xC5B4;&#xC900;&#xB2E4;. <br />&#xBA54;&#xBAA8;&#xB9AC;&#xB9AD;&#xC774; &#xC758;&#xC2EC;&#xAC00;&#xB294; &#xD074;&#xB798;&#xC2A4;&#xB4E4;&#xC744; &#xD655;&#xC778;&#xD558;&#xAC70;&#xB098; &#xC624;&#xB798;&#xB41C; &#xD074;&#xB798;&#xC2A4;&#xB4E4;&#xC758; gc &#xC0C1;&#xD0DC; &#xD655;&#xC778;&#xAC00;&#xB2A5;.</del>
+      </td>
+      <td style="text-align:left"><del>&#xD14C;&#xC2A4;</del>
+      </td>
     </tr>
     <tr>
-      <td style="text-align:left">-XX:+TraceClassLoading</td>
-      <td style="text-align:left">&#xD074;&#xB798;&#xC2A4;&#xB4E4;&#xC774; jvm &#xC5D0; &#xB85C;&#xB4DC;
-        &#xB420;&#xB54C; &#xB85C;&#xADF8;&#xB97C; &#xCC0D;&#xC5B4;&#xC900;&#xB2E4;.</td>
-      <td
-      style="text-align:left">&#xD14C;&#xC2A4;</td>
+      <td style="text-align:left"><del>-XX:+TraceClassLoading</del>
+      </td>
+      <td style="text-align:left"><del>&#xD074;&#xB798;&#xC2A4;&#xB4E4;&#xC774; jvm &#xC5D0; &#xB85C;&#xB4DC; &#xB420;&#xB54C; &#xB85C;&#xADF8;&#xB97C; &#xCC0D;&#xC5B4;&#xC900;&#xB2E4;. </del>
+      </td>
+      <td style="text-align:left"><del>&#xD14C;&#xC2A4;</del>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">-XX:+AlwaysPreTouch</td>
@@ -236,14 +239,59 @@ jvm option 후보들..
         <br />jvm &#xC2DC;&#xC791; &#xC2DC;&#xC5D0;&#xB294; &#xB290;&#xB9AC;&#xC9C0;&#xB9CC;
         run &#xB3C4;&#xC911;&#xC5D0;&#xB294; &#xBE60;&#xB974;&#xB2E4;&#xACE0; &#xD55C;&#xB2E4;.</td>
       <td
-      style="text-align:left">&#xD14C;&#xC2A4;</td>
+      style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">-XX:+PrintGCApplicationConcurrentTime</td>
+      <td style="text-align:left">&#xC571;&#xC758; &#xCD1D; &#xC2E4;&#xD589;&#xC2DC;&#xAC04;</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">-XX:+PrintGCApplicationStoppedTime</td>
+      <td style="text-align:left">gc &#xB85C; &#xC778;&#xD574; &#xC571;&#xC774; &#xC791;&#xB3D9;&#xC744;
+        &#xC911;&#xC9C0;&#xD55C; &#xC2DC;</td>
+      <td style="text-align:left"></td>
     </tr>
   </tbody>
 </table>
 
 
 
+### 테스트가 필요한 jvm option
 
+전 후로 어떤 부분이 명시적으로 표현되는 
+
+| 옵션 명 |  |
+| :--- | :--- |
+| -XX:+PrintHeapAtGC |  |
+| -XX:+PrintClassHistogramAfterFullGC |  |
+| -XX:+PrintClassHistogramBeforeFullGC |  |
+
+
+
+### 리서치가 추가적으로 필요한 jvm option
+
+* 기본 값만으로도 충분한지
+* 변경이 필요하다면 적절한 값은 어떻게 테스트해볼 수 있을
+
+| 옵션 |  |
+| :--- | :--- |
+| -XX:NewRatio |  |
+| -XX:SurvivorRatio |  |
+| -XX:MetaspaceSize |  |
+| -XX:MaxMetaspaceSize |  |
+| -XX:MaxRAMPercentage |  |
+| -XX:IntialRAMPercentage |  |
+
+
+
+> 설정된 jvm 옵션들 확인하는 커맨드 
+>
+> 힙, 메타스페이스 사이즈만 확
+>
+> ```text
+> java -XX:+PrintFlagsFinal -version 2>&1 | grep -i -E 'heapsize|metaspacemsize|version'
+> ```
 
 
 
