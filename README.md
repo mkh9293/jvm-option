@@ -134,19 +134,19 @@ description: jdk8u292 버전 기준으로 공통적으로 설정해놓으면 좋
           &#xC571;&#xC758; &#xACBD;&#xC6B0; &#xB9CE;&#xC740; &#xBA54;&#xBAA8;&#xB9AC;&#xB97C;
           &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
       </td>
-      <td style="text-align:left">&#xD14C;&#xC2A4;&#xD2B8;</td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">-XX:+PrintClassHistogramAfterFullGC</td>
       <td style="text-align:left">fgc &#xB41C; &#xD6C4;&#xC758; &#xBA54;&#xBAA8;&#xB9AC; &#xC815;&#xBCF4;&#xB97C;
         &#xB85C;&#xADF8;&#xC5D0; &#xAE30;&#xB85D;</td>
-      <td style="text-align:left">&#xD14C;&#xC2A4;&#xD2B8;</td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">-XX:+PrintClassHistogramBeforeFullGC</td>
       <td style="text-align:left">fgc &#xB418;&#xAE30; &#xC804; &#xBA54;&#xBAA8;&#xB9AC; &#xC815;&#xBCF4;&#xB97C;
         &#xB85C;&#xADF8;&#xC5D0; &#xAE30;&#xB85D;</td>
-      <td style="text-align:left">&#xD14C;&#xC2A4;&#xD2B8;</td>
+      <td style="text-align:left"></td>
     </tr>
     <tr>
       <td style="text-align:left">-XX:+HeapDumpOnOutOfmemoryError</td>
