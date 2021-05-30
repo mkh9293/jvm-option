@@ -262,14 +262,68 @@ description: jdk8u292 버전 기준으로 공통적으로 설정해놓으면 좋
 * 기본 값만으로도 충분한지
 * 변경이 필요하다면 적절한 값은 어떻게 테스트해볼 수 있을
 
-| 옵션 |  |
-| :--- | :--- |
-| -XX:NewRatio |  |
-| -XX:SurvivorRatio |  |
-| -XX:MetaspaceSize |  |
-| -XX:MaxMetaspaceSize |  |
-| -XX:MaxRAMPercentage |  |
-| -XX:IntialRAMPercentage |  |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left">&#xC635;&#xC158;</th>
+      <th style="text-align:left"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left">-XX:NewRatio</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">-XX:SurvivorRatio</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">-XX:MetaspaceSize</td>
+      <td style="text-align:left">
+        <p>&#xAC00;&#xBE44;&#xC9C0; &#xCEEC;&#xB809;&#xC158;&#xC744; &#xD2B8;&#xB9AC;&#xAC70;&#xD558;&#xB294;
+          &#xBA54;&#xD0C0; &#xC2A4;&#xD398;&#xC774;&#xC2A4;&#xC758; &#xCD5C;&#xC18C;
+          &#xD06C;&#xAE30;&#xB97C; &#xC9C0;&#xC815;&#xD55C;&#xB2E4;.</p>
+        <p>&#xD604;&#xC7AC; &#xC0AC;&#xC6A9;&#xC911;&#xC778; &#xBA54;&#xD0C0;&#xC2A4;&#xD398;&#xC774;&#xC2A4;
+          &#xD06C;&#xAE30; &#xD655;&#xC778; &#xD6C4; &#xC801;&#xC808;&#xD55C; &#xAC12;
+          &#xC124;&#xC815;&#xD558;&#xBA74; &#xB420;&#xB4EF;.</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">-XX:MaxMetaspaceSize</td>
+      <td style="text-align:left">
+        <p>&#xCD5C;&#xB300; &#xBA54;&#xD0C0;&#xC2A4;&#xD398;&#xC774;&#xC2A4; &#xAC12;&#xC744;
+          &#xC9C0;&#xC815;&#xD55C;&#xB2E4;. &#xC9C0;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xC744;
+          &#xACBD;&#xC6B0; &#xC81C;&#xD55C;&#xC5C6;&#xC774; &#xB298;&#xC5B4;&#xB098;&#xAE30;
+          &#xB54C;&#xBB38;&#xC5D0; &#xC2DC;&#xC2A4;&#xD15C; &#xC548;&#xC815;&#xC131;&#xC744;
+          &#xC704;&#xD574; &#xC124;&#xC815;&#xD558;&#xB294;&#xAC8C; &#xC88B;&#xC744;&#xB4EF;
+          &#xC2F6;&#xB2E4;. (&#xAD73;&#xC774; &#xC124;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xB294;&#xAC83;&#xB3C4;
+          &#xAD8C;&#xC7A5;&#xD55C;&#xB2E4;&#xACE0; &#xD568;)</p>
+        <p>&#xC9C0;&#xC815;&#xD55C; &#xAC12;&#xC5D0; &#xB3C4;&#xB2EC;&#xD558;&#xBA74;
+          oome (&quot;meta data space..&quot;) &#xC5D0;&#xB7EC;&#xB97C; &#xBC49;&#xB294;&#xB370;
+          &#xD55C;&#xB3C4;&#xC5C6;&#xC774; &#xB298;&#xC5B4;&#xB098;&#xB294; &#xBB38;&#xC81C;&#xBCF4;&#xB2E4;
+          &#xD574;&#xB2F9; &#xAC12;&#xC5D0; &#xB3C4;&#xB2EC;&#xD574;&#xC11C; &#xC5D0;&#xB7EC;&#xAC00;
+          &#xBC1C;&#xC0DD;&#xD588;&#xC744; &#xACBD;&#xC6B0; &#xC6D0;&#xC778;&#xC744;
+          &#xCC3E;&#xC544;&#xC11C; &#xC218;&#xC815;&#xD558;&#xB294;&#xAC8C; &#xB354;
+          &#xC88B;&#xB2E4;&#xACE0; &#xC0DD;&#xAC01;...</p>
+        <p>&#xD574;&#xB2F9; &#xAC12;&#xC740; &#xC2E4;&#xC81C; &#xCEE4;&#xBC0B;&#xB418;&#xB294;
+          &#xAC12;&#xC774; &#xC544;&#xB2C8;&#xACE0; &#xC0C1;&#xD55C;&#xC120;&#xC744;
+          &#xC9C0;&#xC815;&#xD558;&#xB294; &#xAC83;&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC5D0;
+          &#xCDA9;&#xBD84;&#xD788; &#xD070; &#xAC12;&#xC744; &#xC124;&#xC815;&#xD574;&#xB3C4;
+          &#xB420;&#xB4EF;&#xD558;&#xB2E4;. (ex. 512m &#xBCF4;&#xB2E4; &#xCEE4;&#xC9C0;&#xBA74;
+          oome &#xBC1C;)</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">-XX:MaxRAMPercentage</td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
+      <td style="text-align:left">-XX:IntialRAMPercentage</td>
+      <td style="text-align:left"></td>
+    </tr>
+  </tbody>
+</table>
 
 
 
