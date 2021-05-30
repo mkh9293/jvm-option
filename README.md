@@ -255,19 +255,7 @@ description: jdk8u292 버전 기준으로 공통적으로 설정해놓으면 좋
   </tbody>
 </table>
 
-
-
-### 테스트가 필요한 jvm option
-
-전 후로 어떤 부분이 명시적으로 표현되는 
-
-| 옵션 명 |  |
-| :--- | :--- |
-| -XX:+PrintHeapAtGC |  |
-| -XX:+PrintClassHistogramAfterFullGC |  |
-| -XX:+PrintClassHistogramBeforeFullGC |  |
-
-
+### 
 
 ### 리서치가 추가적으로 필요한 jvm option
 
