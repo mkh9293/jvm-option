@@ -17,7 +17,12 @@ description: jdk8u292 버전 기준으로 공통적으로 설정해놓으면 좋
   <tbody>
     <tr>
       <td style="text-align:left">-XX:+UseG1GC</td>
-      <td style="text-align:left">g1gc &#xB97C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</td>
+      <td style="text-align:left">
+        <p>g1gc &#xB97C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;.</p>
+        <p>4G &#xC774;&#xC0C1;&#xC758; &#xD070; &#xD799;&#xBA54;&#xBAA8;&#xB9AC;&#xB97C;
+          &#xAC00;&#xC9C4; &#xACBD;&#xC6B0; &#xC798; &#xC9C0;&#xC6D0;&#xB418;&#xB3C4;&#xB85D;
+          &#xD588;&#xB2E4;&#xACE0; &#xD568;.</p>
+      </td>
       <td style="text-align:left"></td>
     </tr>
     <tr>
@@ -134,7 +139,7 @@ description: jdk8u292 버전 기준으로 공통적으로 설정해놓으면 좋
           &#xC571;&#xC758; &#xACBD;&#xC6B0; &#xB9CE;&#xC740; &#xBA54;&#xBAA8;&#xB9AC;&#xB97C;
           &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
       </td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#xC120;&#xD0DD;&#xC0AC;</td>
     </tr>
     <tr>
       <td style="text-align:left">-XX:+PrintClassHistogramAfterFullGC</td>
@@ -272,11 +277,11 @@ description: jdk8u292 버전 기준으로 공통적으로 설정해놓으면 좋
   <tbody>
     <tr>
       <td style="text-align:left">-XX:NewRatio</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">g1gc &#xB97C; &#xC0AC;&#xC6A9; &#xC2DC; &#xBBF8; &#xC124;&#xC815; &#xAD8C;&#xC7A5;.</td>
     </tr>
     <tr>
       <td style="text-align:left">-XX:SurvivorRatio</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">g1gc &#xB97C; &#xC0AC;&#xC6A9; &#xC2DC; &#xBBF8; &#xC124;&#xC815; &#xAD8C;&#xC7A5;.</td>
     </tr>
     <tr>
       <td style="text-align:left">-XX:MetaspaceSize</td>
@@ -310,17 +315,31 @@ description: jdk8u292 버전 기준으로 공통적으로 설정해놓으면 좋
           &#xAC12;&#xC774; &#xC544;&#xB2C8;&#xACE0; &#xC0C1;&#xD55C;&#xC120;&#xC744;
           &#xC9C0;&#xC815;&#xD558;&#xB294; &#xAC83;&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC5D0;
           &#xCDA9;&#xBD84;&#xD788; &#xD070; &#xAC12;&#xC744; &#xC124;&#xC815;&#xD574;&#xB3C4;
-          &#xB420;&#xB4EF;&#xD558;&#xB2E4;. (ex. 512m &#xBCF4;&#xB2E4; &#xCEE4;&#xC9C0;&#xBA74;
-          oome &#xBC1C;)</p>
+          &#xB420;&#xB4EF;&#xD558;&#xB2E4;. (256m &#xB85C; &#xCD08;&#xAE30; &#xC124;&#xC815;
+          &#xD6C4; &#xC774;&#xC288;&#xAC00; &#xC788;&#xB294;&#xC9C0; &#xD655;&#xC778;&#xD558;&#xB294;&#xAC83;&#xC744;
+          &#xAD8C;&#xC7A5;&#xD55C;&#xB2E4;&#xACE0; &#xD568;.)</p>
       </td>
     </tr>
     <tr>
       <td style="text-align:left">-XX:MaxRAMPercentage</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">
+        <p>&#xCEE8;&#xD14C;&#xC774;&#xB108;&#xC758; &#xBA54;&#xBAA8;&#xB9AC; &#xC0AC;&#xC774;&#xC988;&#xB97C;
+          &#xAE30;&#xC900;&#xC73C;&#xB85C; &#xD799;&#xBA54;&#xBAA8;&#xB9AC; &#xC0AC;&#xC774;&#xC988;&#xAC00;
+          &#xC801;&#xC6A9;&#xB41C;&#xB2E4;.</p>
+        <p>pod &#xB0B4;&#xBD80; &#xD504;&#xB85C;&#xC138;&#xC2A4;&#xC6A9; &#xACF5;&#xAC04;&#xC744;
+          &#xC704;&#xD574; 75~80% &#xB85C; &#xC815;&#xB3C4;&#xB9CC; &#xC801;&#xC6A9;&#xD558;&#xB294;&#xAC83;&#xC774;
+          &#xAD8C;&#xC7A5;&#xB41C;&#xB2E4;.</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">-XX:IntialRAMPercentage</td>
-      <td style="text-align:left"></td>
+      <td style="text-align:left">&#xBA54;&#xBAA8;&#xB9AC; &#xC0AC;&#xC6A9;&#xB7C9;&#xC774; &#xCD08;&#xAE30;
+        &#xC694;&#xCCAD; &#xBA54;&#xBAA8;&#xB9AC;&#xBCF4;&#xB2E4; &#xB298;&#xC5B4;&#xB0A0;
+        &#xACBD;&#xC6B0; &#xC624;&#xBC84;&#xD5E4;&#xB4DC; &#xBC1C;&#xC0DD;, gc
+        &#xD0C0;&#xC784;&#xC774; &#xB298;&#xC5B4;&#xB0A0; &#xC218; &#xC788;&#xB2E4;&#xACE0;
+        &#xD55C;&#xB2E4;. &#xC624;&#xBC84;&#xD5E4;&#xB4DC;&#xB97C; &#xC904;&#xC774;&#xAE30;
+        &#xC704;&#xD574; MaxRAMPercentage &#xC640; &#xB3D9;&#xC77C;&#xD55C; &#xAC12;&#xC744;
+        &#xC8FC;&#xB294;&#xAC83;&#xC774; &#xAD8C;&#xC7A5;&#xB428;.</td>
     </tr>
   </tbody>
 </table>
